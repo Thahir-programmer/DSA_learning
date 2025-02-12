@@ -12,7 +12,7 @@ public class assignmentnoloop {
          System.out.println("enter the"+i+"cleancity");
          String temp=sc.next();
         a[i-1]=temp;
-        }
+        }       
         List<String>alist=Arrays.asList(a);
         System.out.println("enter the number of busy cities ");
         int m=sc.nextInt();
