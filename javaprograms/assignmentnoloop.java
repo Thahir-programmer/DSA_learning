@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -7,15 +7,13 @@ public class assignmentnoloop {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the number of clean cities ");
         int n=sc.nextInt();
-        //String a[]=new String [n];
-        List<String> a = new ArrayList<>();  //creating list
+        String a[]=new String [n];
         for(int i=1;i<=n;i++){
          System.out.println("enter the"+i+"cleancity");
-         //String temp=sc.next();
-        //a[i-1]=temp;
-        a.add(sc.next());
+         String temp=sc.next();
+        a[i-1]=temp;
         }
-        //List<String>alist=Arrays.asList(a);
+        List<String>alist=Arrays.asList(a);
         System.out.println("enter the number of busy cities ");
         int m=sc.nextInt();
         String b[]=new String [m];
@@ -47,7 +45,7 @@ public class assignmentnoloop {
         String city =sc.next();
         sc.close();
 
-            if(a.contains(city)){
+            if(alist.contains(city)){
                 System.out.println("is clean city ");
             }
 
